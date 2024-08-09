@@ -1,0 +1,509 @@
+body, p, h1, h2, h3, h4, h5, h6, input, button, select, label, a, span, div {
+  font-family: Arial, sans-serif;
+}
+/* Estilos para la página de error */
+.error {
+  color: red;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para la página de carga */
+.loading {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar-container {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 30px;
+  width: 0px;
+  background-color: #0e2472;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 25px 0 0 25px;
+  transition: width 0.2s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.ajaw {
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e2472;
+}
+
+/* Estilos para la página de inicio */
+.encabezado {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo select {
+  width: 30%;
+  height: 15%;
+  margin-top: 3%;
+  margin-left: 40%;    
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.logo-img-ini {
+  margin-top: 2%;
+  margin-left: 3%;
+  max-width: 30%;
+  height: auto;
+}
+
+.anuncio1 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 12%;
+}
+
+.nombre {
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.empresa {
+  text-transform: uppercase;
+  color: #bc8c44;
+  font-size: 50px;
+  height: 45%;
+}
+
+.contenedor1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4%;
+}
+
+.contenedor2 {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.graficas{
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+/*Esta contiene los estilos para la grafica circular*/
+.circular1{
+    width: 45%;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.nombre-graficas {
+  font-family: Arial, sans-serif;
+  color: #0e2472;
+  top: 100%;
+}
+
+/* Estilos para la página de detalles */
+.name {
+  text-transform: uppercase;
+  color: #bc8c44;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.logo-img {
+  margin-top: 1%;
+  margin-left: 3%;
+  max-width: 13%;
+  height: auto;
+}
+
+.tablas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alineación a la izquierda */
+  gap: 45px; /* Espacio entre las tablas */
+}
+
+.estilo-tablas {
+  width: 370px;
+  margin: 10px;
+  border-radius: 5%;
+  box-shadow: 2px 1px 10px 2px rgba(33, 32, 124, 0.1);
+}
+.trabajo-detalles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:45px;
+
+}
+.servicio {
+  color: #0e2472;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.a-title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.datos {   
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.datos p {
+  margin-bottom: 1%;
+}
+
+.datos input {
+  padding: 6px;
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.a-datos input {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(80, 79, 79);
+}
+
+.detalles-trabajos {
+  margin: 2%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+/*Estilos de toda la pagina*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trabajo-detalles {
+  margin-top: 20px;
+}
+
+select {
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none; 
+}
+
+/* Estilos para los cuadros de trabajo */
+.trabajo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.trabajo-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.trabajo-item:hover {
+  transform: scale(1.05);
+}
+
+.trabajo-detalles-hover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.footer{
+  background-color: #0e2472;;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .error {
+    font-size: 24px; /* Ajustar el tamaño de fuente para pantallas más pequeñas */
+  }
+  .loading {
+    width: 50%; /* Ajustar el ancho para centrar mejor en pantallas más pequeñas */
+  }
+
+  .progress-bar-container {
+    width: 90%; /* Ajustar el ancho del contenedor de la barra de progreso */
+  }
+  .encabezado {
+    flex-direction: column; /* Cambiar a dirección columna para centrar mejor en pantallas pequeñas */
+    align-items: center; /* Centrar elementos verticalmente */
+  }
+
+  .logo {
+    width: 90%; /* Ajustar el ancho del logo para ocupar más espacio */
+    height: auto; /* Altura automática */
+  }
+
+  .logo select {
+    width: 80%; /* Ajustar el selector de cliente */
+    height: auto;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+
+  .nombre,
+  .empresa {
+    width: 100%; /* Ajustar el ancho del nombre y empresa para ocupar todo el espacio */
+    font-size: 30px; /* Ajustar el tamaño de fuente */
+  }
+  .contenedor2 {
+    width: 100%; /* Ajustar el contenedor 2 para ocupar todo el ancho disponible */
+    flex-direction: column; /* Cambiar dirección a columna */
+    align-items: center; /* Centrar elementos */
+  }
+  .graficas,
+  .circular1 {
+    width: 90%; /* Ajustar el ancho para pantallas más pequeñas */
+  }
+  .name {
+    font-size: 30px; /* Ajustar el tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .tablas,
+  .trabajo-detalles {
+    flex-direction: column; /* Cambiar a dirección columna para mejor alineación en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+    gap: 20px; /* Espacio entre elementos */
+  }
+
+  .estilo-tablas {
+    width: 90%; /* Ajustar el ancho de las tablas para pantallas más pequeñas */
+  }
+  .datos {
+    width: 90%; /* Ajustar el ancho para ocupar todo el espacio disponible */
+  }
+
+  .datos input {
+    width: 100%; /* Input ocupa todo el ancho disponible */
+  }
+  .centrado {
+    margin-top: 10px; /* Ajustar margen superior para pantallas más pequeñas */
+  }
+
+  .trabajo-detalles {
+    margin-top: 10px; /* Ajustar margen superior para pantallas más pequeñas */
+  }
+  .trabajo-lista {
+    flex-direction: column; /* Cambiar a dirección columna para mejor alineación en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+  }
+
+  .trabajo-item {
+    width: 80%; /* Ajustar el ancho de los ítems de trabajo para pantallas más pequeñas */
+    max-width: 250px; /* Máximo ancho permitido para los ítems de trabajo */
+  }
+  .anuncio1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 12%;
+    margin-bottom: 15%;
+  }
+  
+}
+
+
+
+@media (max-width: 480px) {
+  .error {
+    font-size: 20px; /* Reducir aún más el tamaño de fuente para pantallas muy pequeñas */
+  }
+  .loading {
+    width: 80%; /* Mayor ajuste del ancho para pantallas muy pequeñas */
+  }
+
+  .progress-bar-container {
+    width: 100%; /* Barra de progreso ocupa todo el ancho disponible */
+  }
+  .nombre,
+  .empresa {
+    font-size: 24px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .logo {
+    width: 100%; /* Logo ocupa todo el ancho disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-img-ini {
+    max-width: 50%; /* Ajustar tamaño máximo de la imagen del logo */
+    height: auto;
+  }
+
+  .logo select {
+    width: 80%; /* Ajustar el selector de cliente */
+    height: auto;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .contenedor1{
+    margin-top: 15%;
+  }
+
+  .contenedor2 {
+    gap: 10px; /* Ajustar espacio entre elementos */
+  }
+  .name {
+    font-size: 24px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+  }
+
+  .logo-img {
+    max-width: 30%; /* Reducir el tamaño máximo de la imagen del logo */
+  }
+
+  .estilo-tablas {
+    width: 90%; /* Tablas ocupan todo el ancho disponible */
+  }
+  .datos {
+    width: 90%; /* Ajustar el ancho para ocupar todo el espacio disponible */
+    margin-left: 5%; /* Quitar margen izquierdo para pantallas más pequeñas */
+  }
+
+  .datos p {
+    font-size: 16px; /* Reducir tamaño de fuente para pantallas muy pequeñas */
+  }
+
+  .datos input {
+    width: 100%; /* Input ocupa todo el ancho disponible */
+    padding: 5px; /* Ajustar el padding del input para pantallas más pequeñas */
+  }
+
+  .detalles-trabajos {
+    font-size: 24px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+  }
+  .centrado {
+    margin-top: 5px; /* Ajustar margen superior más compacto para pantallas muy pequeñas */
+  }
+
+  .trabajo-detalles {
+    margin-top: 5px; /* Ajustar margen superior más compacto para pantallas muy pequeñas */
+  }
+  .trabajo-item {
+    width: 90%; /* Ajustar el ancho de los ítems de trabajo para pantallas muy pequeñas */
+  }
+  .graficas,
+  .circular1 {
+    width: 100%; /* Ocupar todo el ancho disponible para pantallas muy pequeñas */
+  }
+} 
